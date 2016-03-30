@@ -3,7 +3,8 @@ using System.ServiceModel;
 
 namespace Correios
 {
-    public class CorreiosApi : AtendeClienteClient
+    public class CorreiosApi : AtendeClienteClient,
+        ICorreiosApi
     {
         public CorreiosApi()
             : base(

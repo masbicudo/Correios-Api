@@ -1,0 +1,70 @@
+namespace Correios
+{
+    public interface ICorreiosApi
+    {
+        long fechaPlp(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.fechaPlpResponse> fechaPlpAsync(string xml, long idPlpCliente, string cartaoPostagem, string faixaEtiquetas, string usuario, string senha);
+        Correios.CorreiosServiceReference.retorno[] registrarPedidosInformacao(Correios.CorreiosServiceReference.pedidoInformacaoRegistro[] pedidosInformacao, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.registrarPedidosInformacaoResponse> registrarPedidosInformacaoAsync(Correios.CorreiosServiceReference.pedidoInformacaoRegistro[] pedidosInformacao, string usuario, string senha);
+        Correios.CorreiosServiceReference.clienteERP buscaCliente(string idContrato, string idCartaoPostagem, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.buscaClienteResponse> buscaClienteAsync(string idContrato, string idCartaoPostagem, string usuario, string senha);
+        bool validaEtiquetaPLP(string numeroEtiqueta, long idPlp, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.validaEtiquetaPLPResponse> validaEtiquetaPLPAsync(string numeroEtiqueta, long idPlp, string usuario, string senha);
+        bool verificaDisponibilidadeServico(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.verificaDisponibilidadeServicoResponse> verificaDisponibilidadeServicoAsync(int codAdministrativo, string numeroServico, string cepOrigem, string cepDestino, string usuario, string senha);
+        Correios.CorreiosServiceReference.statusPlp getStatusPLP(Correios.CorreiosServiceReference.objetoPostal[] arg0, string arg1);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.getStatusPLPResponse> getStatusPLPAsync(Correios.CorreiosServiceReference.objetoPostal[] arg0, string arg1);
+        string bloquearObjeto(string numeroEtiqueta, long idPlp, Correios.CorreiosServiceReference.tipoBloqueio tipoBloqueio, Correios.CorreiosServiceReference.acao acao, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.bloquearObjetoResponse> bloquearObjetoAsync(string numeroEtiqueta, long idPlp, Correios.CorreiosServiceReference.tipoBloqueio tipoBloqueio, Correios.CorreiosServiceReference.acao acao, string usuario, string senha);
+        string solicitaEtiquetas(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.solicitaEtiquetasResponse> solicitaEtiquetasAsync(string tipoDestinatario, string identificador, long idServico, int qtdEtiquetas, string usuario, string senha);
+        Correios.CorreiosServiceReference.mensagemRetornoPIMaster[] obterMensagemRetornoPI();
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.obterMensagemRetornoPIResponse> obterMensagemRetornoPIAsync();
+        Correios.CorreiosServiceReference.retorno[] consultarPedidosInformacao(Correios.CorreiosServiceReference.pedidoInformacaoConsulta[] pedidosInformacao, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.consultarPedidosInformacaoResponse> consultarPedidosInformacaoAsync(Correios.CorreiosServiceReference.pedidoInformacaoConsulta[] pedidosInformacao, string usuario, string senha);
+        string buscaPagamentoEntrega(string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.buscaPagamentoEntregaResponse> buscaPagamentoEntregaAsync(string usuario, string senha);
+        int[] geraDigitoVerificadorEtiquetas(string[] etiquetas, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.geraDigitoVerificadorEtiquetasResponse> geraDigitoVerificadorEtiquetasAsync(string[] etiquetas, string usuario, string senha);
+        bool validarPostagemReversa(int codAdministrativo, int codigoServico, string cepDestinatario, Correios.CorreiosServiceReference.coletaReversaTO coleta, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.validarPostagemReversaResponse> validarPostagemReversaAsync(int codAdministrativo, int codigoServico, string cepDestinatario, Correios.CorreiosServiceReference.coletaReversaTO coleta, string usuario, string senha);
+        long fechaPlpVariosServicos(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.fechaPlpVariosServicosResponse> fechaPlpVariosServicosAsync(string xml, long idPlpCliente, string cartaoPostagem, string[] listaEtiquetas, string usuario, string senha);
+        bool cancelarObjeto(long idPlp, string numeroEtiqueta, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.cancelarObjetoResponse> cancelarObjetoAsync(long idPlp, string numeroEtiqueta, string usuario, string senha);
+        bool validaPlp(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.validaPlpResponse> validaPlpAsync(long cliente, string numero, long diretoria, string cartao, string unidadePostagem, long servico, string[] servicosAdicionais, string usuario, string senha);
+        bool validarPostagemSimultanea(int codAdministrativo, int codigoServico, string cepDestinatario, Correios.CorreiosServiceReference.coletaSimultaneaTO coleta, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.validarPostagemSimultaneaResponse> validarPostagemSimultaneaAsync(int codAdministrativo, int codigoServico, string cepDestinatario, Correios.CorreiosServiceReference.coletaSimultaneaTO coleta, string usuario, string senha);
+        Correios.CorreiosServiceReference.embalagemLRSMaster[] obterEmbalagemLRS();
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.obterEmbalagemLRSResponse> obterEmbalagemLRSAsync();
+        Correios.CorreiosServiceReference.retornoCancelamentoTO cancelarPedidoScol(int codAdministrativo, string idPostagem, string tipo, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.cancelarPedidoScolResponse> cancelarPedidoScolAsync(int codAdministrativo, string idPostagem, string tipo, string usuario, string senha);
+        Correios.CorreiosServiceReference.servicoERP[] buscaServicos(string idContrato, string idCartaoPostagem, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.buscaServicosResponse> buscaServicosAsync(string idContrato, string idCartaoPostagem, string usuario, string senha);
+        string solicitarPostagemScol(int codAdministrativo, string xml, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.solicitarPostagemScolResponse> solicitarPostagemScolAsync(int codAdministrativo, string xml, string usuario, string senha);
+        string solicitaPLP(long idPlpMaster, string numEtiqueta, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.solicitaPLPResponse> solicitaPLPAsync(long idPlpMaster, string numEtiqueta, string usuario, string senha);
+        Correios.CorreiosServiceReference.statusCartao getStatusCartaoPostagem(string numeroCartaoPostagem, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.getStatusCartaoPostagemResponse> getStatusCartaoPostagemAsync(string numeroCartaoPostagem, string usuario, string senha);
+        string solicitaXmlPlp(long idPlpMaster, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.solicitaXmlPlpResponse> solicitaXmlPlpAsync(long idPlpMaster, string usuario, string senha);
+        Correios.CorreiosServiceReference.motivoPIMaster[] obterMotivosPI();
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.obterMotivosPIResponse> obterMotivosPIAsync();
+        Correios.CorreiosServiceReference.contratoERP buscaContrato(string numero, long diretoria, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.buscaContratoResponse> buscaContratoAsync(string numero, long diretoria, string usuario, string senha);
+        string consultaSRO(string[] listaObjetos, string tipoConsulta, string tipoResultado, string usuarioSro, string senhaSro);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.consultaSROResponse> consultaSROAsync(string[] listaObjetos, string tipoConsulta, string tipoResultado, string usuarioSro, string senhaSro);
+        System.DateTime obterClienteAtualizacao(string cnpjCliente, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.obterClienteAtualizacaoResponse> obterClienteAtualizacaoAsync(string cnpjCliente, string usuario, string senha);
+        bool integrarUsuarioScol(int codAdministrativo, string usuario, string senha);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.integrarUsuarioScolResponse> integrarUsuarioScolAsync(int codAdministrativo, string usuario, string senha);
+        bool atualizaPLP(long idPlpMaster, string numEtiqueta, string usuario, string senha, string xml);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.atualizaPLPResponse> atualizaPLPAsync(long idPlpMaster, string numEtiqueta, string usuario, string senha, string xml);
+        Correios.CorreiosServiceReference.assuntoPIMaster[] obterAssuntosPI();
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.obterAssuntosPIResponse> obterAssuntosPIAsync();
+        Correios.CorreiosServiceReference.enderecoERP consultaCEP(string cep);
+        System.Threading.Tasks.Task<Correios.CorreiosServiceReference.consultaCEPResponse> consultaCEPAsync(string cep);
+    }
+}
