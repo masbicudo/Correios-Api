@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>1.0.0</version>
+    <id>Correios-Api</id>
+    <version>1.0.1</version>
     <title>Correios-Api (Portable)</title>
     <authors>Miguel Angelo (masbicudo)</authors>
     <owners>Miguel Angelo</owners>
@@ -23,5 +23,8 @@
     <tags>
         correios api cep busca endereco codigo enderecamento postal address brazil brazilian zip code
     </tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" />
+    </frameworkAssemblies>
   </metadata>
 </package>

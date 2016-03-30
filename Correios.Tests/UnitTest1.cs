@@ -1,6 +1,4 @@
-﻿using System;
-using Correios.CorreiosServiceReference;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Correios.Tests
 {
@@ -13,7 +11,7 @@ namespace Correios.Tests
             var service = new CorreiosApi();
             var task = service.consultaCEPAsync("24710480");
             var result = task.Result;
-
+            var bairro = result.@return.bairro;
         }
     }
 }
