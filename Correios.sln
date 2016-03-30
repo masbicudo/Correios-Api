@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios.Tests", "Correios.Tests\Correios.Tests.csproj", "{5E1C4A27-AE12-4E7A-B3B9-3DB00460F284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios-Portable", "Correios-Portable\Correios-Portable.csproj", "{DCB35CB5-1636-4AFF-9401-99761A9B23D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios", "Correios\Correios.csproj", "{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E1C4A27-AE12-4E7A-B3B9-3DB00460F284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1C4A27-AE12-4E7A-B3B9-3DB00460F284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1C4A27-AE12-4E7A-B3B9-3DB00460F284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1C4A27-AE12-4E7A-B3B9-3DB00460F284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB35CB5-1636-4AFF-9401-99761A9B23D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB35CB5-1636-4AFF-9401-99761A9B23D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB35CB5-1636-4AFF-9401-99761A9B23D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB35CB5-1636-4AFF-9401-99761A9B23D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
