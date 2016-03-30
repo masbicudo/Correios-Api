@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios-Portable", "Correi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios", "Correios\Correios.csproj", "{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Correios-NuGet", "Correios-NuGet\Correios-NuGet.csproj", "{DB7A77FA-7AC7-4BF1-9032-002AFC7A9277}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C749D0E-3822-4FD3-85EA-8E4CD8A4115B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7A77FA-7AC7-4BF1-9032-002AFC7A9277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7A77FA-7AC7-4BF1-9032-002AFC7A9277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7A77FA-7AC7-4BF1-9032-002AFC7A9277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7A77FA-7AC7-4BF1-9032-002AFC7A9277}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
