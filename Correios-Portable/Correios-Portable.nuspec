@@ -2,24 +2,40 @@
 <package >
   <metadata>
     <id>Correios-Api</id>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <title>Correios-Api (Portable)</title>
     <authors>Miguel Angelo (masbicudo)</authors>
     <owners>Miguel Angelo</owners>
-    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/masbicudo/Correios-Api/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/masbicudo/Correios-Api</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/masbicudo/Correios-Api/master/icon-256.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
-        Biblioteca portável feita usando o web-service oficial dos Correios.
+    <summary>
+        Biblioteca portável desenvolvida utilizando-se o web-service oficial dos Correios.
         Conta com interfaces síncronas e assíncronas (async/await).
-        Não faz parse de HTML.
         Exemplo: service.consultaCEP("24710480")
+    </summary>
+    <description>
+        Biblioteca portável desenvolvida utilizando-se o web-service oficial dos Correios.
+        Conta com interfaces síncronas e assíncronas (async/await).
+        
+        Exemplo:
+            service.consultaCEP("24710480")
+        
+        O código é gerado automaticamente pelo Visual Studio a partir do WSDL dos Correios,
+        Não faz parse de HTML.
+        Dessa forma não há possibilidade de erros.
+        
+        Licença: Apache 2.0
+        
+        Veja a página do projeto para mais informações, exemplos e questões.
     </description>
     <releaseNotes>
+        1.1.1 Interfaces individualizadas para operações síncronas e assíncronas.
+        1.1.0 Interface ICorreiosApi
         Veja a página do projeto para mais informações, exemplos e questões.
     </releaseNotes>
-    <copyright>Copyright MASBicudo 2016</copyright>
+    <copyright>Copyright © Miguel Angelo 2016</copyright>
     <tags>
         correios api cep busca endereco codigo enderecamento postal address brazil brazilian zip code
     </tags>
