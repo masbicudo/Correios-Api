@@ -1,4 +1,5 @@
-# Correios-Api (Portable)
+<h1> <img style="vertical-align:bottom;" src="https://raw.githubusercontent.com/masbicudo/Correios-Api/master/icon-256.png" width="48" height="48" /> Correios-Api (Portable)</h1>
+
 
 Biblioteca portável desenvolvida utilizando-se o **web-service oficial dos Correios**:
 
