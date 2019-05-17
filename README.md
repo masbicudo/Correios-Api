@@ -62,4 +62,4 @@ de Postagem dos Correios – SIGEP WEB com sistemas proprietários de cliente
 Documentação oficial do Web-Service
 -----------------------------------
 
-[Manual de Implementação do Web Service SIGEPWEB Logistica Reversa](http://www.corporativo.correios.com.br/encomendas/sigepweb/doc/Manual_de_Implementacao_do_Web_Service_SIGEPWEB_Logistica_Reversa.pdf)
+[Manual de Implementação do Web Service SIGEPWEB Logistica Reversa](http://www.corporativo.correios.com.br/encomendas/sigepweb/doc/Manual_de_Implementacao_do_Web_Service_SIGEP_WEB.pdf)
